@@ -1,0 +1,116 @@
+.presentation
+  margin-top 40px
+
+  &__title
+    margin-bottom 30px !important
+
+  &__container
+    padding 0 40px
+    max-width 1200px
+    margin 0 auto
+
+  &__slider
+    width 100%
+    position relative
+
+  &__slide
+    width 100%
+    height 500px
+
+  &__wrapper
+    display flex
+    height 100%
+
+    @media (max-width: 960px)
+      flex-direction column
+
+  &__column
+    width 50%
+    height 100%
+    position relative
+    display flex
+    flex-direction column
+    justify-content space-between
+
+    @media (max-width: 960px)
+      width 100%
+
+
+    & img
+      width 100%
+      height 100%
+      object-fit cover
+
+    &--content
+      background-color rgba(0,0,0,0.1)
+
+  &__body
+    padding 80px
+
+    @media (max-width: 960px)
+      padding 20px
+
+    @media(max-width 460px)
+      max-height 250px
+      overflow-y scroll
+
+  &__btn-wrap
+    width 100%
+    display flex
+
+  &__title
+    font-size 25px
+    font-family ProximaNova-Extrabold
+
+    @media (max-width: 960px)
+      font-size 18px
+
+.btn-slide
+  color rgba(255,177,42,1)
+  background #fff
+  font-size 20px
+  font-family ProximaNova-Extrabold
+  line-height 1
+  width 100%
+  border 1px solid rgba(0,0,0,0.1)
+  height 60px
+  cursor pointer
+  transition all 0.3s ease
+
+  @media (max-width: 960px)
+    font-size 16px
+
+  &:hover
+    font-size 22px
+    color #fff
+    background rgba(255,113,0,0.8)
+
+    @media (max-width: 960px)
+      font-size 18px
+
+  & + &
+    margin-left -1px
+
+.slick-dots li button
+  background rgba(255,177,42,0.8)
+  border-radius 50%
+
+.slick-active > button
+  background rgba(255,177,42,0.8)!important
+  position relative
+
+  &:before
+    content ''
+    width 10px !important
+    height 10px !important
+    border-radius 50% !important
+    position absolute !important
+    left 5px !important
+    top 5px !important
+    background #fff !important
+
+.slick-dots
+  bottom -40px
+
+  @media (max-width 450px)
+    bottom -55px

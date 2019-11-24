@@ -1,0 +1,29 @@
+mixin request()
+  +b.request.gadget
+    +e.container
+      +e.block
+        +e.btn-wrapper
+          +e.btns
+            span.back ЛИЦЕНЗИИ
+            button.btn-card
+          +e.btns
+            span.back РЕФЕРЕНТ-ЛИСТ
+            button.btn-card
+          +e.btns
+            span.back ПЕРЕЧЕНЬ УСЛУГ
+            button.btn-card
+        +e.card
+          +e.body
+            +e.title ОСТАВЬТЕ ЗАЯВКУ
+            +e.text и получите #[span технико-коммерческое предлоежние] #[br]под Ваши потребности в течение #[span 7 МИНУТ]
+          +e.FORM.form
+            +e.inputs
+              +e.LABEL.label--login
+                +e.INPUT(type="text" placeholder="Ваше имя").input
+              +e.LABEL.label--tel
+                +e.INPUT(type="phone" placeholder="+7 (999) 123 45 67").input
+              +e.LABEL.label--email
+                +e.INPUT(type="text" placeholder="Example@email.ru").input
+            +e.btn-wrap
+              button.btn-request ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ
+

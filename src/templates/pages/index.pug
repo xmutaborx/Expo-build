@@ -1,0 +1,37 @@
+
+include ../bemto/bemto.pug
+
+include ../blocks/header/header
+include ../blocks/navigation/navigation
+include ../blocks/main/main
+include ../blocks/request/request
+include ../blocks/works/works
+include ../blocks/info/info
+include ../blocks/presentation/presentation
+include ../blocks/items/items
+include ../blocks/footer/footer
+include ../blocks/scripts/scripts
+
+-
+  set_bemto_settings({
+    prefix: '',
+    element: '__',
+    modifier: '--'
+  })
+
+doctype html
+html(lang='ru')
+  include ../blocks/head/head
+  body
+    +header()
+    +navigation()
+    +main()
+    +request()
+    +works()
+    +info()
+    +request()
+    +presentation()
+    +items()
+    +footer()
+    block scripts
+    +scripts(['https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', 'build.js'])

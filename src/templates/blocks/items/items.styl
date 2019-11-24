@@ -1,0 +1,130 @@
+.items
+  padding 50px 0
+
+  &__container
+    max-width 1200px
+    padding 0 20px
+    margin 0 auto
+
+  &__title
+    background #021631
+    max-width 480px
+    margin 0 auto
+    padding 12px 15px 8px
+    margin-bottom 50px
+
+    @media(max-width: 900px)
+      margin-bottom 90px
+
+  &__title-text
+    color #fff
+    font-family ProximaNova-Extrabold
+    font-size 35px
+    text-align center
+
+    @media(max-width: 420px)
+      font-size 28px
+
+  &__row
+    display flex
+    justify-content center
+
+    & + &
+      margin-top 60px
+
+    @media(max-width: 900px)
+      flex-direction column
+      align-items center
+
+  &__card
+    width 370px
+    height 150px
+    position relative
+    background-color rgba(0,0,0,0.5)
+    border-radius 5px
+    display flex
+    flex-direction column
+    justify-content flex-end
+    cursor pointer
+    transition all 0.3s ease
+    box-shadow 0px 0px 21px 5px rgba(0,0,0,0.0)
+    padding 0 10px
+
+    @media(max-width: 900px)
+      width 100%
+
+    &:hover
+      background-color rgba(0,0,0,0.15)
+      box-shadow: 0px 0px 21px 5px rgba(0,0,0,0.3);
+      & > .items__card-text
+        color #d35e01
+      & > div:last-child
+        height 130%
+
+    & + &
+      margin-left 20px
+      @media(max-width: 900px)
+        margin-left 0
+        margin-top 60px
+
+  &__card-text
+    font-size 17px
+    font-family ProximaNova-Bold
+    text-align center
+    color #fff
+    z-index 5
+    transition all 0.3s ease
+
+  &__item
+    width 100%
+    height 120%
+    top -65px
+    position absolute
+    transition all 0.2s ease
+
+    &--item1
+      background url('../images/item1.png') no-repeat center
+      background-size contain
+
+    &--item2
+      background url('../images/item2.png') no-repeat center
+      background-size contain
+
+    &--item3
+      top -45px
+      background url('../images/item3.png') no-repeat center
+      background-size contain
+
+    &--item4
+      top -45px
+      background url('../images/item4.png') no-repeat center
+      background-size contain
+
+    &--item5
+      background url('../images/item5.png') no-repeat center
+      background-size contain
+
+    &--item6
+      top -45px
+      background url('../images/item6.png') no-repeat center
+      background-size contain
+
+    &--item7
+      top -35px
+      background url('../images/item7.png') no-repeat center
+      background-size contain
+
+    &--item8
+      top -50px
+      background url('../images/item8.png') no-repeat center
+      background-size contain
+
+    &--item9
+      top -50px
+      background url('../images/item9.png') no-repeat center
+      background-size contain
+
+    &--item10
+      top -50px
+      background url('../images/item10.png') no-repeat center
+      background-size contain

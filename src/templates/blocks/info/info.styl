@@ -1,0 +1,116 @@
+.info
+  background url('../images/background2.png')
+
+  &__container
+    padding 80px
+
+    @media(max-width: 1200px)
+      padding 20px
+
+  &__title-block
+    width 100%
+    background #021631
+    padding 10px 0
+
+  &__title
+    text-align center
+    color #fff
+    font-size 35px
+    font-family ProximaNova-Extrabold
+
+    @media(max-width: 900px)
+      font-size 25px
+
+  &__wrapper
+    display flex
+
+    @media(max-width: 900px)
+      flex-direction column
+      align-items center
+
+  &__list
+    list-style-type none
+    width 50%
+
+    @media(max-width: 900px)
+      width 100%
+      padding 0
+
+  &__list-item
+    display flex
+    align-items center
+
+    & + &
+      margin-top 30px
+
+  &__text
+    color #fff
+    font-size 20px
+    font-family ProximaNova-Extrabold
+    padding-left 20px
+
+    @media(max-width: 900px)
+      font-size 16px
+
+.steps
+  padding-top 50px
+  padding-bottom 50px
+
+  &__container
+    padding 0 60px
+
+    @media (max-width: 970px)
+      padding 0 20px
+
+  &__wrapper
+    display flex
+    justify-content space-between
+
+    @media (max-width: 970px)
+      flex-direction column
+      align-items center
+
+  &__list-block
+    width 50%
+
+    @media (max-width: 970px)
+      width 100%
+    & + &
+      padding-left 60px
+
+      @media (max-width: 970px)
+        padding-left 0
+        margin-top 20px
+
+  &__list
+    list-style-type none
+    padding 0
+    padding-top 40px
+
+  &__list-title-text
+    font-size 35px
+    font-family ProximaNova-Extrabold
+    padding-bottom 25px
+
+    @media (max-width: 1120px)
+      font-size 30px
+
+  &__item-title
+    background linear-gradient(180deg, rgba(255,113,0,1) 0%, rgba(255,177,42,1) 100%)
+    -webkit-background-clip text
+    -webkit-text-fill-color transparent
+    color #fff
+    font-size 22px
+    font-family ProximaNova-Extrabold
+    line-height 1
+
+  &__item-text
+    font-size 18px
+    line-height 1
+
+  &__list-item
+    & + &
+      margin-top 40px
+
+  &__list-title
+    border-bottom 4px solid #c8cfde

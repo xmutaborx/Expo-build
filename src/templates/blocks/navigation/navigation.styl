@@ -1,0 +1,55 @@
+.navigation
+  background #ffffff
+  padding 30px 0 40px
+
+  &__container
+    max-width 1200px
+    margin 0 auto
+    padding 0 20px
+
+  &__list
+    list-style-type none
+    display flex
+    justify-content space-between
+    margin 0
+    padding 0
+
+    @media(max-width: 900px)
+      display flex
+      flex-direction column
+      align-items center
+
+
+  &__list-item
+    & + &
+      @media(max-width: 900px)
+        margin-top 25px
+
+  &__link
+    font-family ProximaNova-Extrabold
+    color #021631
+    position relative
+    transition all 0.3s ease
+
+    &:hover
+      text-decoration none
+      &:before
+        content ''
+        position absolute
+        width 100%
+        height 2px
+        background linear-gradient(90deg, rgba(255,113,0,1) 0%, rgba(255,177,42,1) 100%)
+        left 0
+        bottom -10px
+
+  &__link-btn
+    background linear-gradient(90deg, rgba(255,113,0,1) 0%, rgba(255,177,42,1) 100%)
+    padding 16px 20px 12px
+    border-radius 30px
+    color #fff
+    font-family ProximaNova-Bold
+    transition all 0.3s ease
+    &:hover
+      text-decoration none
+      color #fff
+      opacity 0.6

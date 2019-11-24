@@ -1,0 +1,38 @@
+mixin footer()
+  +b.footer
+    +e.container
+      +e.wrapper
+        +e.column
+          +e.title О НАС
+          +e.text ООО "Стройэксперт" ведет деятельность в области обследования зданий, конструкций и сооружений, строительно-технической экспертизы и диагностики, проектирования индивидуальной и коммерческой недвижимости
+          +e.btn-wrap
+            .request__btns
+              span.back КАРТОЧКА ПРЕДПРИЯТИЯ
+              button.btn-card.btn-card--footer
+
+        +e.column--nav
+          +e.title МЕНЮ
+          +e.UL.list
+            +e.LI.list-item
+              +e.A(href="#").link Компания
+            +e.LI.list-item
+              +e.A(href="#").link Принцип работы
+            +e.LI.list-item
+              +e.A(href="#").link Стоимость
+            +e.LI.list-item
+              +e.A(href="#").link Квалификация
+            +e.LI.list-item
+              +e.A(href="#").link Контакты
+
+        +e.column
+          +e.UL.list--last
+            +e.LI.list-item--last
+              +e.P.text Телефон
+              +e.P.value 8 (863) 256-79-45
+            +e.LI.list-item--last
+              +e.P.text Адрес
+              +e.P.value ПР-Т ВОРОШИЛОВСКИЙ 2/2, ОФ. 301А-305 (3Й ЭТАЖ)
+            +e.LI.list-item--last
+              +e.P.text Email
+              +e.P.value STROIEXPERT.INFO@MAIL.RU
+

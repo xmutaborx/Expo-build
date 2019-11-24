@@ -1,0 +1,146 @@
+.request
+  position relative
+  padding 0 20px
+
+  &.gadget
+    &:before
+      content ''
+      position absolute
+      width 392px
+      height 630px
+      background url('../images/gadget1.png')
+      right -58px
+      top -100px
+      transform rotate(15deg)
+    @media(max-width: 1350px)
+      &:before
+        background none
+        width 0
+        height 0
+
+  &__container
+    border 10px solid #c6d0e0
+    max-width 1140px
+    padding 50px 30px 30px
+    margin 0 auto
+
+    @media(max-width: 1028px)
+      padding 20px
+
+  &__btn-wrapper
+    display flex
+    flex-direction column
+    justify-content space-between
+    height 230px
+    padding-left 40px
+
+    @media(max-width: 1028px)
+      padding 0
+      height auto
+      order 2
+      margin-top 20px
+
+  &__block
+    margin-left auto
+    display flex
+    @media(max-width: 1028px)
+      flex-direction column
+      align-items center
+
+  &__btns
+    width 250px
+    & + &
+      @media(max-width: 1028px)
+        margin-top 10px
+
+  &__card
+    max-width 700px
+    margin 0 auto
+
+  &__title
+    font-family ProximaNova-Extrabold
+    font-size 35px
+    color #021531
+    text-align center
+
+    @media(max-width: 680px)
+      font-size 25px
+
+  &__text
+    font-size 24px
+    text-align center
+    & span
+      font-family ProximaNova-Bold
+
+    @media(max-width: 680px)
+      font-size 18px
+
+  &__form
+    margin-top 20px
+
+  &__inputs
+    display flex
+    justify-content space-between
+
+    @media(max-width: 1028px)
+      flex-direction column
+      align-items center
+
+  &__input
+    border none
+    outline none
+    border-bottom 2px solid #021631
+    padding 0 7px 4px 30px
+    max-width 170px
+
+    @media(max-width: 1028px)
+      max-width: 320px
+
+    &:focus
+      border-bottom 2px solid rgba(255,177,42,1)
+
+
+  &__btn-wrap
+    margin-top 20px
+    display flex
+    justify-content center
+
+  &__label
+    position relative
+
+    & + &
+      @media(max-width: 680px)
+        margin-top 15px
+
+    &--login
+      &:before
+        content ''
+        position absolute
+        width 16px
+        height 16px
+        background url('../images/user.png')
+        left 7px
+        top 6px
+
+    &--tel
+      &:before
+        content ''
+        position absolute
+        width 16px
+        height 16px
+        background url('../images/phone.png')
+        left 7px
+        top 6px
+
+    &--email
+      &:before
+        content ''
+        position absolute
+        width 20px
+        height 16px
+        background url('../images/email.png')
+        left 5px
+        top 6px
+
+
+
