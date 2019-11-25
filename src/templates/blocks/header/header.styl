@@ -1,25 +1,46 @@
 .header
   background: #c6d0e0;
+  position relative
+  padding 25px 0
 
   &__container
     display flex
     align-items center
-    padding 20px 45px
+    padding 0 20px
+    max-width 1380px
+    margin 0 auto
 
+    @media(max-width: 1900px)
+      margin-left 295px
+      margin-right auto
     @media(max-width: 1400px)
-      flex-direction column
+      margin 0 auto
 
   &__wrapper
     display flex
     align-items center
+    justify-content: space-between
+    width 100%
+
+    @media(max-width: 1400px)
+      margin-top 20px
 
     @media(max-width: 900px)
+      flex-direction row
+      align-items center
+      flex-wrap wrap
+
+    @media(max-width: 660px)
+      align-items baseline
+
+    @media(max-width: 400px)
       flex-direction column
       align-items center
 
   &__contacts
     display flex
     align-items center
+    justify-content space-between
 
     @media(max-width: 1400px)
       margin-top 20px
@@ -31,12 +52,15 @@
 
 
   &__info
-    margin-right 40px
-
-    @media(max-width: 900px)
+    @media (max-width: 1400px)
+      position absolute
+      right 20px
+      top 22px
+    @media(max-width: 660px)
+      position static
       text-align center
-      margin 0
-      margin-top 10px
+      margin 0 auto
+      margin-bottom 20px
 
   &__info-text,
   &__text
@@ -46,6 +70,9 @@
 
   &__info-text
     font-family ProximaNova-Extrabold
+    font-size 22px
+    @media(max-width: 660px)
+      font-size 18px
 
   &__text
     line-height 1
@@ -55,10 +82,22 @@
   &__logo
     width 205px
     height 95px
-    margin-right 40px
     flex-shrink 0
+    position absolute
+    left 40px
+    top 25px
+    @media(max-width: 1400px)
+      position relative
+      top -10px
+      left 20px
+
     @media(max-width: 900px)
       margin 0
+
+    @media(max-width: 660px)
+      position static
+      margin 0 auto
+
     img
       width 100%
 
@@ -69,11 +108,25 @@
       margin 0
       margin-bottom 10px
 
+    @media(max-width: 660px)
+      display none
+
   &__block
     @media(max-width: 900px)
+      width 50%
+
+    @media(max-width: 400px)
+      width 100%
+
+    &--logo
+      display flex
+      align-items center
+
+    @media(max-width: 900px)
       text-align center
+      justify-content center
     & + &
-      margin-left 20px
+      // margin-left 45px
       @media(max-width: 900px)
         margin 0
         margin-top 10px
