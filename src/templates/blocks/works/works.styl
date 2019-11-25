@@ -62,11 +62,14 @@
 
   &__list
     list-style-type none
-    max-width 530px
+    width 500px
     height 500px
     display flex
     flex-direction column
     justify-content space-between
+
+    @media(max-width: 760px)
+      width auto
 
     & + &
       padding-left 70px

@@ -22,6 +22,10 @@
       height 100%
       background rgba(0,0,0,0.6)
 
+  &__head
+    @media(max-width: 500px)
+      padding 0 10px
+
   &__body
     display flex
     margin-bottom 30px
@@ -47,7 +51,7 @@
       font-size 35px
 
     @media(max-width: 650px)
-      font-size 25px
+      font-size 21px
 
   &__block
     width 25%
@@ -68,6 +72,11 @@
     font-weight bold
     white-space nowrap
     text-align center
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+      color orange
+      background none
+
+
 
   &__block-text
     font-family ProximaNova-Bold
@@ -96,7 +105,7 @@
         height 100%
         background #c7d0e0
         top 0
-        left -20px
+        left -12px
       @media(max-width: 830px)
         &:before
           width 0

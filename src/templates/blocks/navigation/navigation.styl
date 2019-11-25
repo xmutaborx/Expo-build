@@ -31,16 +31,24 @@
     position relative
     transition all 0.3s ease
 
+    &:before
+      content ''
+      position absolute
+      width 1px
+      height 2px
+      background linear-gradient(90deg, rgba(255,113,0,1) 0%, rgba(255,177,42,1) 100%)
+      left 50%
+      bottom -10px
+      opacity 0
+      transition all 0.3s ease
+
     &:hover
       text-decoration none
+
       &:before
-        content ''
-        position absolute
-        width 100%
-        height 2px
-        background linear-gradient(90deg, rgba(255,113,0,1) 0%, rgba(255,177,42,1) 100%)
         left 0
-        bottom -10px
+        width 100%
+        opacity 1
 
   &__link-btn
     background linear-gradient(90deg, rgba(255,113,0,1) 0%, rgba(255,177,42,1) 100%)

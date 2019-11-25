@@ -1,6 +1,9 @@
 .info
   background url('../images/background2.png')
 
+  @media(max-width: 900px)
+    background-size cover
+
   &__container
     padding 80px
 
@@ -35,6 +38,10 @@
     @media(max-width: 900px)
       width 100%
       padding 0
+
+    & + &
+      @media(max-width: 900px)
+        margin-top 30px
 
   &__list-item
     display flex
@@ -103,6 +110,9 @@
     font-size 22px
     font-family ProximaNova-Extrabold
     line-height 1
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+      color orange
+      background none
 
   &__item-text
     font-size 18px
